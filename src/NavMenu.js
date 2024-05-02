@@ -33,8 +33,8 @@ export default function NavBarMenu() {
       </div>
       <div className={`Dropdown-Menu ${open ? `active` : `inactive`}`}>
         <ul>
-          <DropdownItem url="/" text="Home" />
-          <DropdownItem url="/" text="> Foundation" />
+          <DropdownItem url="<foundation/>" text="Home" />
+          <DropdownItem url="./foundation" text="> Foundation" />
           <DropdownItem url="/" text="> Exploration" />
           <DropdownItem url="/" text="> Inspiration" />
         </ul>
