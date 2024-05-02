@@ -1,12 +1,10 @@
 import React from "react";
 import "./styles/App.css";
 import "./styles/Intro.css";
-import NavMenu from "./NavMenu";
 
 export default function IntroSection() {
   return (
     <div className="Intro">
-      <NavMenu />
       <h1>Introduction</h1>
       <div className="intro-para">
         <p>
@@ -24,7 +22,9 @@ export default function IntroSection() {
         </p>
         <p>Now, you get to have a go!</p>
       </div>
-      <div id="dialog2" class="triangle_down1"></div>
+      <a href="/">
+        <div id="dialog2" className="triangle_down1"></div>
+      </a>
     </div>
   );
 }

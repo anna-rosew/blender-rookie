@@ -11,7 +11,6 @@ export default function ComputerHero() {
           scene="https://prod.spline.design/A8GqjKLBpzrMR-JR/scene.splinecode
     "
         />
-        <div id="dialog2" class="triangle_down1"></div>
       </Wrapper>
     </div>
   );

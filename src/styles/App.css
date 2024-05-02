@@ -19,11 +19,51 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.2rem;
+}
+
+h3 span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 p {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  font-size: 15px;
 }
 
 .triangle_down1 {
@@ -40,11 +80,12 @@ p {
   margin-left: 1em;
 }
 
-@media (min-width: 600px) {
-  header {
-    height: 100vh;
+@media (min-width: 700px) and (max-width: 1920px) {
+  canvas {
+    height: 100%;
   }
-
+}
+@media (min-width: 600px) {
   canvas {
     height: 100vh;
   }
