@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+#root {
+  height: 100%;
+  background: #ddc7ba;
+}
+
+body {
+  margin: 0 auto;
+}
+
+App {
+  background: #ddc7ba;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.triangle_down1 {
+  position: relative;
+  top: -5px;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-right: 0.2em solid black;
+  border-top: 0.2em solid black;
+  transform: rotate(135deg);
+  margin-right: 0.5em;
+  margin-left: 1em;
+}
+
+@media (min-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  canvas {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,23 @@
+.Intro {
+  background-color: #a1d0be;
+  padding: 200px;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+}
+p {
+  font-size: 24px;
+}
+
+.intro-para {
+  display: block;
+  margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Intro {
+    background-color: #a1d0be;
+    padding: 20px;
+  }
+}

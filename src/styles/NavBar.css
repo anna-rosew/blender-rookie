@@ -1,0 +1,151 @@
+.Menu-Trigger img {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Dropdown-Menu {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: white;
+  width: 130px;
+}
+
+.Dropdown-Menu::before {
+  content: " ";
+  position: absolute;
+  top: -11px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.Dropdown-Menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.5ms ease;
+}
+
+.Dropdown-Menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20);
+  transition: 0.5ms ease;
+}
+
+h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.2rem;
+}
+
+h3 span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Dropdown-Menu ul li {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.2rem;
+}
+
+.Dropdown-Menu ul li:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.dropdownItem {
+  display: flex;
+  margin: 10px auto;
+}
+
+.dropdownItem a {
+  margin-left: 10px;
+  transition: 0.2ms;
+  color: black;
+}
+
+.dropdownItem a:hover {
+  color: orange;
+}
+
+@media screen and (max-width: 767px) {
+  .Menu-Trigger img {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .Dropdown-Menu {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: white;
+    width: 130px;
+  }
+
+  .Dropdown-Menu::before {
+    content: " ";
+    position: fixed;
+    top: -11px;
+    right: 10%;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+  }
+
+  .Dropdown-Menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.5ms ease;
+  }
+
+  .Dropdown-Menu.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20);
+    transition: 0.5ms ease;
+  }
+}
