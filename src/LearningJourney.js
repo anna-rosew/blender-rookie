@@ -23,13 +23,13 @@ export default function LearningJourney() {
 
 function SectionSummary(props) {
   return (
-    <div className="SectionSummary">
+    <div className="container">
       <div className="row">
-        <div className="col">
+        <div className="col-6">
           <h1>{props.title}</h1>
           <h4>{props.subtitle}</h4>
         </div>
-        <div className="col">
+        <div className="col-6">
           <img src={props.src} className="summary-img" alt={props.title} />
         </div>
       </div>
