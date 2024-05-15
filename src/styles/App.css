@@ -79,7 +79,6 @@ p {
   margin-right: 0.5em;
   margin-left: 1em;
 }
-
 @media (min-width: 700px) and (max-width: 1920px) {
   canvas {
     height: 100%;
