@@ -1,22 +1,24 @@
 import React from "react";
 import "./styles/App.css";
 import "./styles/LearningJourney.css";
-import Flow from "./Flow.js";
 
 export default function LearningJourney() {
   function SectionSummary(props) {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-6">
-            <h1>{props.title}</h1>
-            <h4>{props.subtitle}</h4>
-          </div>
-          <div className="col-6">
-            <img src={props.src} className="summary-img" alt={props.title} />
-          </div>
+      <section className="grid grid-2-columns">
+        <div>
+          <img
+            src={props.imgUrl}
+            alt="Blender-editor-screenshot"
+            className="img-responsive"
+          />
         </div>
-      </div>
+        <div>
+          <h2>{props.subtitle}</h2>
+          <h1>{props.title}</h1>
+          <p>{props.description}</p>
+        </div>
+      </section>
     );
   }
 
@@ -34,9 +36,9 @@ export default function LearningJourney() {
       <SectionSummary
         title="Foundation"
         subtitle="Learn the basic concepts at your own pace."
+        description="This is a comprehensive A-Z roadmap of the foundational principals and skills you'll need to start out with Blender. "
+        imgUrl=""
       />
-
-      <Flow />
     </div>
   );
 }
