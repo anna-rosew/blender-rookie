@@ -96,13 +96,7 @@ p {
   margin-right: 0.5em;
   margin-left: 1em;
 }
-@media (min-width: 700px) and (max-width: 1920px) {
-  canvas {
-    height: 100%;
-  }
-}
-@media (min-width: 600px) {
-  canvas {
-    height: 100vh;
-  }
+
+.ThreedContainer {
+  height: 100vh;
 }
