@@ -3,25 +3,6 @@ import "./styles/App.css";
 import "./styles/LearningJourney.css";
 
 export default function LearningJourney() {
-  function SectionSummary(props) {
-    return (
-      <section className="grid grid-2-columns">
-        <div>
-          <img
-            src={props.imgUrl}
-            alt="Blender-editor-screenshot"
-            className="img-responsive"
-          />
-        </div>
-        <div>
-          <h2>{props.subtitle}</h2>
-          <h1>{props.title}</h1>
-          <p>{props.description}</p>
-        </div>
-      </section>
-    );
-  }
-
   return (
     <div className="LearningJourney">
       <h2>A Short Guide</h2>
@@ -33,12 +14,57 @@ export default function LearningJourney() {
           Exploration
         </a>
       </h4>
-      <SectionSummary
-        title="Foundation"
-        subtitle="Learn the basic concepts at your own pace."
-        description="This is a comprehensive A-Z roadmap of the foundational principals and skills you'll need to start out with Blender. "
-        imgUrl=""
-      />
+      <section className="grid grid-2-columns">
+        <div>
+          <img
+            src="/"
+            alt="Blender-editor-screenshot"
+            className="img-responsive"
+          />
+        </div>
+        <div>
+          <h2>Learn the basic concepts at your own pace.</h2>
+          <h1>Foundation</h1>
+          <p>
+            This is a comprehensive A-Z roadmap of the foundational principals
+            and skills you'll need to start out with Blender.
+          </p>
+        </div>
+      </section>
+      <section className="grid grid-2-columns">
+        <div>
+          <h2>Learn the basic concepts at your own pace.</h2>
+          <h1>Foundation</h1>
+          <p>
+            This is a comprehensive A-Z roadmap of the foundational principals
+            and skills you'll need to start out with Blender.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/"
+            alt="Blender-editor-screenshot"
+            className="img-responsive"
+          />
+        </div>
+      </section>
+      <section className="grid grid-2-columns">
+        <div>
+          <img
+            src="/"
+            alt="Blender-editor-screenshot"
+            className="img-responsive"
+          />
+        </div>
+        <div>
+          <h2>Learn the basic concepts at your own pace.</h2>
+          <h1>Foundation</h1>
+          <p>
+            This is a comprehensive A-Z roadmap of the foundational principals
+            and skills you'll need to start out with Blender.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
