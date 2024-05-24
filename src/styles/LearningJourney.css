@@ -1,12 +1,66 @@
 .LearningJourney {
   background-color: white;
+  text-align: center;
 }
 
 .learning-heading {
   padding: 80px;
 }
 
-h2 {
+.subtitle {
   margin-top: 0;
   margin-bottom: 20px;
+  font-weight: 300;
+  font-style: light;
+  font-size: 14px;
+  opacity: 70%;
+}
+
+.LearningJourney h1 {
+  font-size: 48px;
+  margin: 30px auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 46px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.learn {
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid black;
+  margin: 30px;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  section {
+    padding: 10px;
+  }
+
+  .subtitle {
+    margin-bottom: 0;
+  }
+
+  .learning-heading {
+    padding: 30px;
+  }
+
+  .LearningJourney h1 {
+    margin: 10px auto;
+  }
 }
