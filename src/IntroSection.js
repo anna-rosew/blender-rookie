@@ -2,8 +2,6 @@ import React from "react";
 import "./styles/App.css";
 import "./styles/Intro.css";
 
-//Change spacing on load
-
 export default function IntroSection() {
   return (
     <div className="Intro">
