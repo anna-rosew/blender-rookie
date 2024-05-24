@@ -4,7 +4,7 @@
 }
 
 .learning-heading {
-  padding: 80px;
+  padding: 60px;
 }
 
 .subtitle {
@@ -18,7 +18,17 @@
 
 .LearningJourney h1 {
   font-size: 48px;
-  margin: 30px auto;
+  margin: 10px auto;
+}
+
+.LearningJourney a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.LearningJourney a:hover {
+  text-decoration: underline;
 }
 
 .img-responsive {
@@ -32,15 +42,31 @@
   grid-gap: 64px;
 }
 
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .learn {
-  padding: 10px;
-  border-radius: 14px;
-  border: 1px solid black;
+  display: inline-block;
+  padding: 10px 20px;
   margin: 30px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 14px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+.learn:hover {
+  background-color: #005f6b;
+  color: white;
+  text-decoration: none;
+}
+
+.inspired {
+  margin-top: 75px;
 }
 
 @media (max-width: 960px) {
@@ -62,5 +88,9 @@
 
   .LearningJourney h1 {
     margin: 10px auto;
+  }
+
+  .inspired {
+    margin: 30px;
   }
 }

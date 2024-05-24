@@ -1,16 +1,40 @@
 .Intro {
   background-color: #a1d0be;
   padding: 50px;
-  text-align: center;
-  height: 100vh;
 }
-h1 {
+
+.Intro h2 {
+  text-align: left;
+}
+
+.intro-header {
   font-size: 40px;
+  text-align: center;
+}
+
+.intro-summary {
+  text-align: center;
 }
 
 .intro-para {
+  font-weight: 400;
+}
+
+.intro-para.one {
+  border-right: 1px solid black;
+  padding-right: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.triangle_down1 {
   display: block;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -20,11 +44,22 @@ h1 {
     text-align: left;
   }
 
-  .intro-para p {
-    font-size: 18px;
+  .intro-header {
+    margin: 10px;
+  }
+  .intro-summary {
+    margin: 0;
   }
 
   .intro-para {
-    margin-bottom: 30px;
+    font-size: 15px;
+  }
+
+  .intro-para.one {
+    border: none;
+  }
+
+  .triangle_down1 {
+    margin: 10px auto;
   }
 }

@@ -19,19 +19,17 @@ export default function LearningJourney() {
           This is a simple breakdown of how to go about learning Blender. If
           you’re experienced, it’s recommended you skip to{" "}
           <a href="/" alt="Skip to exploration">
-            Exploration
+            Exploration.
           </a>
         </h4>
       </div>
-      <section className="grid grid-2-columns">
-        <div>
+      <section className="grid grid-3-columns">
+        <div className="foundation">
           <img
             src={plantImage}
             alt="Blender-editor-screenshot"
             className="img-responsive"
           />
-        </div>
-        <div>
           <h2 className="subtitle">
             - Learn the basic concepts at your own pace -
           </h2>
@@ -42,11 +40,17 @@ export default function LearningJourney() {
             the software interface to creating your first animation, these steps
             will help you build a foundation of skills.
           </p>
-          <button className="learn">Start Learning</button>
+          <a href="https://www.example.com" className="learn">
+            Start Learning
+          </a>
         </div>
-      </section>
-      <section className="grid grid-2-columns">
-        <div>
+
+        <div className="Exploration">
+          <img
+            src={booksImage}
+            alt="Blender-editor-screenshot"
+            className="img-responsive"
+          />
           <h2 className="subtitle">- Expand and Build Your Skills -</h2>
           <h1>Exploration</h1>
           <p>
@@ -55,25 +59,17 @@ export default function LearningJourney() {
             completed the <a href="/">Foundation Roadmap</a> or are already
             familiar with Blender, we recommend you jump here.
           </p>
-          <button className="learn">Explore More</button>
+          <a href="https://www.example.com" className="learn">
+            Explore More
+          </a>
         </div>
-        <div>
-          <img
-            src={booksImage}
-            alt="Blender-editor-screenshot"
-            className="img-responsive"
-          />
-        </div>
-      </section>
-      <section className="grid grid-2-columns">
-        <div>
+
+        <div className="Inspiration">
           <img
             src={mugImage}
             alt="Blender-editor-screenshot"
             className="img-responsive"
           />
-        </div>
-        <div>
           <h2 className="subtitle">- Get the creative juices flowing -</h2>
           <h1>Inspiration</h1>
           <p>
@@ -81,7 +77,9 @@ export default function LearningJourney() {
             we've linked some communities and artists we recommend getting
             plugged into.{" "}
           </p>
-          <button className="learn">Start Learning</button>
+          <a href="https://www.example.com" className="learn inspired">
+            Get Inspired
+          </a>
         </div>
       </section>
     </div>
