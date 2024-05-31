@@ -8,10 +8,11 @@
 }
 
 .subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 300;
-  font-style: light;
   font-size: 14px;
   opacity: 70%;
 }

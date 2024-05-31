@@ -30,9 +30,7 @@ export default function LearningJourney() {
             alt="Blender-editor-screenshot"
             className="img-responsive"
           />
-          <h2 className="subtitle">
-            - Learn the basic concepts at your own pace -
-          </h2>
+          <h2 className="subtitle">- Learn the basics at your own pace -</h2>
           <h1>Foundation</h1>
           <p>
             This is a comprehensive A-Z roadmap of the foundational principals

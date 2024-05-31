@@ -1,0 +1,21 @@
+.foundation-section {
+  background-color: #f5f3f1;
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+.centered-line {
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  height: 80px;
+  width: 2px; /* Line width */
+  border-left: 2px dashed black; /* Dashed line */
+  transform: translateX(-50%);
+}
+
+.grid-5-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
