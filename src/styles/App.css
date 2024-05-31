@@ -16,6 +16,7 @@ h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.2em;
 }
 
 h2 {
@@ -77,10 +78,6 @@ p {
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-3-columns-with-first-narrow {
-  grid-template-columns: 1fr 2fr 2fr;
 }
 
 .triangle_down1 {

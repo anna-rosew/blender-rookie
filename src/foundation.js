@@ -115,6 +115,10 @@ export default function Foundation() {
   return (
     <div className="foundation-section">
       <h1>Foundation</h1>
+      <div className="centered-line"></div>
+      <a href="https://www.example.com" className="download-button">
+        DOWNLOAD BLENDER
+      </a>
       <div className="grid-container">
         <div className="grid grid-5-columns">
           {buttonsData.map((data, index) => (
