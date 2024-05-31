@@ -3,15 +3,24 @@ import LearningButton from "./LearningButton";
 import "./styles/Foundation.css";
 import "./styles/Section.css";
 import "./styles/App.css";
-import gizmo from "./imgs/mug.png";
+import ui from "./imgs/UI.png";
+import modelling from "./imgs/modelling.png";
+import sculpting from "./imgs/sculpting.png";
+import shading from "./imgs/shading.png";
+import geometry from "./imgs/geometry-nodes.png";
+import layout from "./imgs/layout.png";
+import compositing from "./imgs/compositing.png";
+import lighting from "./imgs/llighting.png";
+import animating from "./imgs/animation.png";
+import rendering from "./imgs/rendering.png";
 
 // Sample image URL for demonstration purposes
 
 const buttonsData = [
   {
-    buttonLabel: "Button 1",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 1",
+    buttonLabel: "Step 1",
+    buttonImageSrc: ui,
+    buttonHeading: "UI/Navigation",
     modalHeading: "Modal Title 1",
     modalSubHeading: "Modal SubHeading 1",
     modalContent: "Content for Modal 1",
@@ -19,9 +28,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 1",
   },
   {
-    buttonLabel: "Button 2",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 2",
+    buttonLabel: "Step 2",
+    buttonImageSrc: modelling,
+    buttonHeading: "Modelling",
     modalHeading: "Modal Title 2",
     modalSubHeading: "Modal SubHeading 2",
     modalContent: "Content for Modal 2",
@@ -29,9 +38,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 2",
   },
   {
-    buttonLabel: "Button 3",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 3",
+    buttonLabel: "Step 3",
+    buttonImageSrc: sculpting,
+    buttonHeading: "Sculpting",
     modalHeading: "Modal Title 3",
     modalSubHeading: "Modal SubHeading 3",
     modalContent: "Content for Modal 3",
@@ -39,9 +48,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 3",
   },
   {
-    buttonLabel: "Button 4",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 3",
+    buttonLabel: "Step 4",
+    buttonImageSrc: shading,
+    buttonHeading: "Shading",
     modalHeading: "Modal Title 3",
     modalSubHeading: "Modal SubHeading 3",
     modalContent: "Content for Modal 3",
@@ -49,9 +58,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 3",
   },
   {
-    buttonLabel: "Button 5",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 3",
+    buttonLabel: "Step 5",
+    buttonImageSrc: geometry,
+    buttonHeading: "Geometry",
     modalHeading: "Modal Title 3",
     modalSubHeading: "Modal SubHeading 3",
     modalContent: "Content for Modal 3",
@@ -59,9 +68,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 3",
   },
   {
-    buttonLabel: "Button 6",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 3",
+    buttonLabel: "Step 6",
+    buttonImageSrc: layout,
+    buttonHeading: "Layout",
     modalHeading: "Modal Title 3",
     modalSubHeading: "Modal SubHeading 3",
     modalContent: "Content for Modal 3",
@@ -69,9 +78,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 3",
   },
   {
-    buttonLabel: "Button 3",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 3",
+    buttonLabel: "Step 7",
+    buttonImageSrc: compositing,
+    buttonHeading: "Compositing",
     modalHeading: "Modal Title 3",
     modalSubHeading: "Modal SubHeading 3",
     modalContent: "Content for Modal 3",
@@ -79,9 +88,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 3",
   },
   {
-    buttonLabel: "Button 3",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 3",
+    buttonLabel: "Step 8",
+    buttonImageSrc: lighting,
+    buttonHeading: "Lighting",
     modalHeading: "Modal Title 3",
     modalSubHeading: "Modal SubHeading 3",
     modalContent: "Content for Modal 3",
@@ -89,9 +98,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 3",
   },
   {
-    buttonLabel: "Button 3",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 3",
+    buttonLabel: "Step 9",
+    buttonImageSrc: animating,
+    buttonHeading: "Animating",
     modalHeading: "Modal Title 3",
     modalSubHeading: "Modal SubHeading 3",
     modalContent: "Content for Modal 3",
@@ -99,9 +108,9 @@ const buttonsData = [
     modalSecondaryButton: "Secondary Action 3",
   },
   {
-    buttonLabel: "Button 3",
-    buttonImageSrc: gizmo,
-    buttonHeading: "Heading 3",
+    buttonLabel: "Step 10",
+    buttonImageSrc: rendering,
+    buttonHeading: "Rendering",
     modalHeading: "Modal Title 3",
     modalSubHeading: "Modal SubHeading 3",
     modalContent: "Content for Modal 3",
