@@ -12,8 +12,7 @@ import shading from "./imgs/shading.png";
 //rigging
 //retopologising
 //Simulation and effects
-//Particle systems
-//cloth and softbody simulation
+//Soft body and cloth simulation
 
 const buttonsData = [
   {
