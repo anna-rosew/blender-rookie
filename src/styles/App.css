@@ -67,6 +67,10 @@ p {
   line-height: 1.5em;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;

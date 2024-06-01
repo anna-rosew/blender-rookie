@@ -3,14 +3,14 @@ import LearningButton from "./LearningButton";
 import "./styles/Foundation.css";
 import "./styles/Section.css";
 import "./styles/App.css";
-import ui from "./imgs/UI.png";
+import ui from "./imgs/Ui.png";
 import modelling from "./imgs/modelling.png";
 import sculpting from "./imgs/sculpting.png";
 import shading from "./imgs/shading.png";
 import geometry from "./imgs/geometry-nodes.png";
 import layout from "./imgs/layout.png";
 import compositing from "./imgs/compositing.png";
-import lighting from "./imgs/llighting.png";
+import lighting from "./imgs/lighting.png";
 import animating from "./imgs/animation.png";
 import rendering from "./imgs/rendering.png";
 
@@ -21,9 +21,10 @@ const buttonsData = [
     buttonLabel: "Step 1",
     buttonImageSrc: ui,
     buttonHeading: "UI/Navigation",
-    modalHeading: "Modal Title 1",
-    modalSubHeading: "Modal SubHeading 1",
-    modalContent: "Content for Modal 1",
+    modalHeading: "1",
+    modalSubHeading: "UI/Navigation",
+    modalContent1: `To be able to work in the three-dimensional space that Blender uses, you must be able to change your viewpoint as well as the viewing direction of the scene. While we will describe the 3D Viewport editor, most of the other editors have similar functions. For example, it is possible to pan and zoom in the Image editor.`,
+    modalContent2: "Poop",
     modalPrimaryButton: "Primary Action 1",
     modalSecondaryButton: "Secondary Action 1",
   },
@@ -31,6 +32,7 @@ const buttonsData = [
     buttonLabel: "Step 2",
     buttonImageSrc: modelling,
     buttonHeading: "Modelling",
+    modalNumber: "2",
     modalHeading: "Modal Title 2",
     modalSubHeading: "Modal SubHeading 2",
     modalContent: "Content for Modal 2",
@@ -125,7 +127,13 @@ export default function Foundation() {
     <div className="foundation-section">
       <h1>Foundation</h1>
       <div className="centered-line"></div>
-      <a href="https://www.example.com" className="download-button">
+      <a
+        href="https://www.blender.org/download/"
+        className="download-button"
+        target="_blank"
+        rel="noreferrer"
+        alt="Download Blender Link"
+      >
         DOWNLOAD BLENDER
       </a>
       <div className="grid-container">
@@ -138,7 +146,8 @@ export default function Foundation() {
               buttonHeading={data.buttonHeading}
               modalHeading={data.modalHeading}
               modalSubHeading={data.modalSubHeading}
-              modalContent={data.modalContent}
+              modalContent1={data.modalContent1}
+              modalContent2={data.modalContent2}
               modalPrimaryButton={data.modalPrimaryButton}
               modalSecondaryButton={data.modalSecondaryButton}
             />

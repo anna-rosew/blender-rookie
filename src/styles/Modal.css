@@ -13,24 +13,63 @@ p {
 }
 
 .modal-container {
-  background-color: #fefffe;
+  background-color: #d9d9d9;
   margin: 10% auto;
-  width: 50%;
-  padding: 10px;
+  width: 80%;
+  height: 60%;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 .learning-button button {
   padding: 10px;
   border-radius: 15px;
   background-color: #f5e3e3;
+  box-shadow: 5px 4px 0px 0px #000;
+  min-width: 220px;
+}
+
+.learning-button h3 {
+  font-size: 24px;
+  padding: 0;
+  margin: 10px;
+  text-align: left;
+}
+
+.learning-button p {
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 500;
+  margin-left: 10px;
+  display: block;
+  max-width: 80px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+}
+
+#button-icon {
+  display: block;
+  margin: 0 auto;
 }
 
 .button-icon {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 @media (max-width: 960px) {
-  .button-icon {
-    max-width: 150px;
+  #button-icon {
+    display: none;
+  }
+
+  .learning-button h3 {
+    font-size: 19px;
+    width: 150px;
+  }
+  .learning-button button {
+    width: 110px;
+    min-width: 170px;
   }
 }

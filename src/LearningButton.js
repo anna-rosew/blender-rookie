@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import "./styles/App.css";
+import "./styles/Modal.css";
 import Modal from "./Modal.js";
 
 export default function LearningButton({
   buttonLabel,
   buttonImageSrc,
   buttonHeading,
+
   modalHeading,
   modalSubHeading,
-  modalContent,
+  modalContent1,
+  modalContent2,
   modalPrimaryButton,
   modalSecondaryButton,
 }) {
@@ -20,16 +23,22 @@ export default function LearningButton({
           setOpen(true);
         }}
       >
-        <img src={buttonImageSrc} alt="button icon" className="button-icon" />
+        <img
+          src={buttonImageSrc}
+          alt="button icon"
+          className="button-icon"
+          id="button-icon"
+        />
         <h3>{buttonHeading}</h3>
-        {buttonLabel}
+        <p>{buttonLabel}</p>
       </button>
       <Modal
         isOpen={isOpen}
         onClose={() => setOpen(false)}
         heading={modalHeading}
         subHeading={modalSubHeading}
-        content={modalContent}
+        content1={modalContent1}
+        content2={modalContent2}
         primaryButton={modalPrimaryButton}
         secondaryButton={modalSecondaryButton}
       />

@@ -8,7 +8,8 @@ export default function Modal({
   onClose,
   heading,
   subHeading,
-  content,
+  content1,
+  content2,
   primaryButton,
   secondaryButton,
 }) {
@@ -16,18 +17,19 @@ export default function Modal({
   return createPortal(
     <div className="modal">
       <div className="modal-container">
+        <button className="modal-close-button" onClick={onClose}>
+          <CloseIcon />
+        </button>
         <div className="modal-body">
           <h1>{heading}</h1>
           <h3>{subHeading}</h3>
-          <p>{content}</p>
+          <p>{content1}</p>
+          <p>{content2}</p>
         </div>
         <div className="modal-buttons">
           <button onClick={onClose}>{primaryButton}</button>
           <button onClick={onClose}>{secondaryButton}</button>
         </div>
-        <button className="modal-close-button" onClick={onClose}>
-          <CloseIcon />
-        </button>
       </div>
     </div>,
     document.getElementById("modal")
