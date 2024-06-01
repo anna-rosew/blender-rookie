@@ -1,5 +1,5 @@
 import React from "react";
-import LearningButton from "./LearningButton";
+import ExplorationButton from "./ExplorationButton";
 import "./styles/Exploration.css";
 import "./styles/Section.css";
 import "./styles/App.css";
@@ -81,26 +81,40 @@ const buttonsData = [
     modalSecondaryButtonLink:
       "https://www.youtube.com/watch?v=fsLO1F5x7yM&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=5",
   },
+  {
+    buttonLabel: "Step 5",
+    buttonImageSrc: shading,
+    buttonHeading: "Shading",
+    modalHeading: "4",
+    modalSubHeading: "Shading",
+    modalContent1:
+      "Shading in Blender involves creating materials and textures to define how surfaces interact with light using the node-based Shader Editor. This allows for the creation of complex, realistic, or stylized materials by connecting various shader nodes. Artists can use shaders like diffuse, glossy, and emission to achieve specific effects, while texture maps such as bump, normal, and displacement add surface detail without increasing geometry. Blender’s PBR (Physically Based Rendering) shaders ensure materials behave realistically under different lighting conditions, enhancing the realism and visual appeal of 3D models.",
+    modalContent2:
+      "TIP: Before shading, understand how light interacts with surfaces. This knowledge helps in creating more realistic materials.",
+    modalPrimaryButton: "Blender Documentation >>",
+    modalPrimaryButtonLink:
+      "https://docs.blender.org/manual/en/2.79/editors/3dview/properties/shading.html",
+    modalSecondaryButton: "Doughnut Tutorial >>",
+    modalSecondaryButtonLink:
+      "https://www.youtube.com/watch?v=fsLO1F5x7yM&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=5",
+  },
 ];
 
 export default function Exploration() {
   return (
     <div className="exploration-section">
+      <div className="explore-centered-line"></div>
       <h1>Exploration</h1>
-      <div className="centered-line"></div>
-      <a
-        href="https://www.blender.org/download/"
-        className="download-button"
-        target="_blank"
-        rel="noreferrer"
-        alt="Download Blender Link"
-      >
-        DOWNLOAD BLENDER
-      </a>
+      <p className="description">
+        Now you're on you're well on your way to mastering Blender, here are
+        some areas you can explore to <strong>broaden your skills.</strong>{" "}
+        These are just 5 areas of interest of many that you can venture into to
+        challenge yourself and push your designs further.
+      </p>
       <div className="grid-container">
         <div className="grid grid-5-columns">
           {buttonsData.map((data, index) => (
-            <LearningButton
+            <ExplorationButton
               key={index}
               buttonLabel={data.buttonLabel}
               buttonImageSrc={data.buttonImageSrc}

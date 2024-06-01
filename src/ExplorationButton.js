@@ -19,7 +19,7 @@ export default function ExplorationButton({
 }) {
   const [isOpen, setOpen] = useState(false);
   return (
-    <div className="learning-button">
+    <div className="exploration-button">
       <button
         onClick={() => {
           setOpen(true);

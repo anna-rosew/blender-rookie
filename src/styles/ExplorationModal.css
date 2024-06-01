@@ -35,7 +35,7 @@ p {
   max-width: 40px;
 }
 
-.learning-button button {
+.exploration-button button {
   padding: 10px;
   border-radius: 15px;
   background-color: #f5e3e3;
@@ -43,14 +43,14 @@ p {
   min-width: 220px;
 }
 
-.learning-button h3 {
+.exploration-button h3 {
   font-size: 24px;
   padding: 0;
   margin: 10px;
   text-align: left;
 }
 
-.learning-button p {
+.exploration-button p {
   font-size: 15px;
   padding: 5px;
   font-weight: 500;
@@ -123,11 +123,11 @@ p {
     display: none;
   }
 
-  .learning-button h3 {
+  .exploration-button h3 {
     font-size: 19px;
     width: 150px;
   }
-  .learning-button button {
+  .exploration-button button {
     width: 110px;
     min-width: 170px;
   }

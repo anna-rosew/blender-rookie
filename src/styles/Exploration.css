@@ -1,5 +1,5 @@
 .exploration-section {
-  background-color: #f5f3f1;
+  background-color: #265e71;
   text-align: center;
   padding: 50px;
 }
@@ -7,45 +7,31 @@
 .exploration-section h1 {
   font-size: 48px;
   margin-bottom: 10px;
+  color: white;
+}
+
+.description {
+  color: white;
+  margin-bottom: 30px;
 }
 
 h4 {
   margin-bottom: 20px;
 }
-.centered-line {
+
+.explore-centered-line {
   display: block;
   margin: 0 auto;
   left: 50%;
   height: 50px;
   width: 2px; /* Line width */
-  border-left: 2px dashed black; /* Dashed line */
+  border-left: 2px dashed white; /* Dashed line */
   transform: translateX(-50%);
 }
 
 .grid-5-columns {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
-}
-
-.download-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  background-color: #ef9031;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 14px;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  border: 1px solid black;
-}
-
-.download-button:hover {
-  background-color: #005f6b;
-  color: white;
-  text-decoration: none;
 }
 
 @media (max-width: 960px) {
