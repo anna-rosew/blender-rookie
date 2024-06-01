@@ -59,6 +59,18 @@ p {
   max-width: 150px;
 }
 
+.modal-close-button button {
+  max-width: 50px;
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+  align-content: right;
+  border: none;
+}
+
+.close-icon {
+  max-width: 50px;
+}
+
 @media (max-width: 960px) {
   #button-icon {
     display: none;
