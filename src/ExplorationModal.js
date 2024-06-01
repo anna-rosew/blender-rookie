@@ -1,6 +1,6 @@
 import React from "react";
 import { createPortal } from "react-dom";
-import "./styles/Modal.css";
+import "./styles/ExplorationModal.css";
 import CloseIcon from "./CloseIcon";
 
 export default function ExplorationModal({

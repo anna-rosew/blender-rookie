@@ -1,10 +1,10 @@
-.foundation-section {
+.exploration-section {
   background-color: #f5f3f1;
   text-align: center;
   padding: 50px;
 }
 
-.foundation-section h1 {
+.exploration-section h1 {
   font-size: 48px;
   margin-bottom: 10px;
 }
@@ -54,7 +54,7 @@ h4 {
     grid-gap: 10px;
   }
 
-  .foundation-section {
+  .exploration-section {
     padding: 10px;
   }
 }
