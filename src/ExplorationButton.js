@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./styles/App.css";
-import "./styles/Modal.css";
-import Modal from "./Modal.js";
+import "./styles/ExplorationModal.css";
+import ExplorationModal from "./ExplorationModal.js";
 
-export default function LearningButton({
+export default function ExplorationButton({
   buttonLabel,
   buttonImageSrc,
   buttonHeading,
@@ -34,7 +34,7 @@ export default function LearningButton({
         <h3>{buttonHeading}</h3>
         <p>{buttonLabel}</p>
       </button>
-      <Modal
+      <ExplorationModal
         isOpen={isOpen}
         onClose={() => setOpen(false)}
         heading={modalHeading}

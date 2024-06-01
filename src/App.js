@@ -5,8 +5,9 @@ import NavMenu from "./NavMenu";
 import ComputerHero from "./ComputerHero";
 import IntroSection from "./IntroSection";
 import LearningJourney from "./LearningJourney";
-import Foundation from "./Foundation";
+import Foundation from "./Foundation.js";
 import Footer from "./Footer";
+import Exploration from "./Exploration";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <IntroSection />
       <LearningJourney />
       <Foundation />
+      <Exploration />
       <Footer />
     </div>
   );

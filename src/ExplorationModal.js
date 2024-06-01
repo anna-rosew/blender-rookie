@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import "./styles/Modal.css";
 import CloseIcon from "./CloseIcon";
 
-export default function Modal({
+export default function ExplorationModal({
   isOpen,
   onClose,
   heading,
