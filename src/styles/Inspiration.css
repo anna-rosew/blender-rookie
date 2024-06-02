@@ -9,17 +9,19 @@
 }
 
 .inspiration-section {
-  color: white;
+  color: black;
 }
 
 .inspiration-section h1 {
   font-size: 48px;
-  margin: 0 auto;
+  margin-bottom: 10px;
+
   text-align: center;
 }
 
 .inspiration-section h2 {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .communities {
@@ -57,13 +59,16 @@ li:hover {
 }
 .grid-4-columns {
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
   grid-gap: 10px;
 }
 
 @media (max-width: 960px) {
   .communities {
     padding: 15px;
+  }
+
+  .artists {
+    padding: 10px;
   }
 
   .grid-4-columns {

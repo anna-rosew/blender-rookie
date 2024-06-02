@@ -27,6 +27,7 @@ export default function Inpiration() {
           <strong>get plugged in!</strong>
         </p>
         <p>So, here are some places you can find other Blender enthusiasts:</p>
+
         <ul>
           <li>
             <a
@@ -124,7 +125,6 @@ export default function Inpiration() {
               width={328}
             />
           </div>
-
           <div style={{ display: "flex", justifyContent: "center" }}>
             <InstagramEmbed
               url="https://www.instagram.com/p/Cz0NGuwPAiE/"
