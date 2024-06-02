@@ -42,7 +42,7 @@ const buttonsData = [
     modalContent1:
       "Modeling in Blender involves creating and manipulating 3D objects and scenes using the powerful tools and features provided by the software. When you open the editor you will always be presented with a square - this square, like every object in Blender, has a mesh and which consists of vertices ( points in 3D space), edges (connect vertices(), and faces (formed by edges). By adjusting the different parts of a mesh you can create a world of different shapes and getting used these three elements as the basis of any shape will impact all future creative decisions.",
     modalContent2:
-      "TIP: Learning the basic keyboard shortcuts is the key to fast workdlow.",
+      "TIP: Learning the basic keyboard shortcuts is the key to fast workflow.",
     modalPrimaryButton: "Blender Documentation >>",
     modalPrimaryButtonLink:
       "https://www.blender.org/features/modeling/https://www.youtube.com/watch?v=tBpnKTAc5Eo&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=2",

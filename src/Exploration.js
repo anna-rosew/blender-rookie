@@ -3,10 +3,11 @@ import ExplorationButton from "./ExplorationButton";
 import "./styles/Exploration.css";
 import "./styles/Section.css";
 import "./styles/App.css";
-import ui from "./imgs/Ui.png";
-import modelling from "./imgs/modelling.png";
-import sculpting from "./imgs/sculpting.png";
-import shading from "./imgs/shading.png";
+import render from "./imgs/pc.png";
+import rigging from "./imgs/rigging.png";
+import retopologising from "./imgs/retopologise.png";
+import effects from "./imgs/effects.png";
+import cloth from "./imgs/cloth-sim.png";
 
 // Render optimisation
 //rigging
@@ -16,87 +17,84 @@ import shading from "./imgs/shading.png";
 
 const buttonsData = [
   {
-    buttonLabel: "Step 1",
-    buttonImageSrc: ui,
-    buttonHeading: "UI/Navigation",
+    buttonLabel: "Topic 1",
+    buttonImageSrc: render,
+    buttonHeading: "Optimisation",
     modalHeading: "01",
     modalSubHeading: "UI/Navigation",
-    modalContent1: `To effectively navigate the three-dimensional space in Blender, you need to be able to alter both your viewpoint and the viewing direction of the scene. While we will focus on the 3D Viewport editor, it's worth noting that many other editors in Blender offer similar capabilities. For instance, you can pan and zoom in the Image editor as well.The simplest way to get your head around this is to watch a few tutorials and just start building. Below you will find the link to the Blender site as well as the all-famous BlenderGuru Doughut Tutorial. It's recommended that you start with understanding the Navigation Gizmo.`,
+    modalContent1: `Render optimization in Blender involves techniques to reduce render times and improve efficiency without compromising visual quality. Key strategies include adjusting sample rates to find a balance between speed and noise, optimizing lighting and shadows, using denoising tools, and leveraging GPU rendering if available. Additionally, optimizing scene geometry, reducing texture resolutions where possible, and utilizing efficient render settings such as adaptive sampling and simplified materials for distant objects can significantly enhance performance. Utilizing these methods helps achieve faster renders while maintaining high-quality outputs.`,
     modalContent2:
-      "TIP: Some navigation tools require a middle mouse button or numpad. If you don’t have one of these, see the Keyboard and Mouse page of the manual to learn how to work around this.",
+      "TIP: Use GPU Rendering if you can! If you hav a compatibel device, GPU rendering will allow for for faster performance.",
     modalPrimaryButton: "Blender Documentation >>",
     modalPrimaryButtonLink:
-      "https://docs.blender.org/manual/en/latest/editors/3dview/navigate/index.html",
-    modalSecondaryButton: "Doughnut Tutorial >>",
+      "https://docs.blender.org/manual/en/latest/render/cycles/optimizations/index.html",
+    modalSecondaryButton: "Recommended Tutorial >>",
     modalSecondaryButtonLink:
-      "https://www.youtube.com/watch?v=B0J27sf9N1Y&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z",
+      "https://www.youtube.com/watch?v=8gSyEpt4-60&t=2387s",
   },
   {
-    buttonLabel: "Step 2",
-    buttonImageSrc: modelling,
-    buttonHeading: "Modelling",
+    buttonLabel: "Topic 2",
+    buttonImageSrc: rigging,
+    buttonHeading: "Rigging",
     modalHeading: "2",
-    modalSubHeading: "Modelling",
+    modalSubHeading: "Rigging",
     modalContent1:
-      "Modeling in Blender involves creating and manipulating 3D objects and scenes using the powerful tools and features provided by the software. When you open the editor you will always be presented with a square - this square, like every object in Blender, has a mesh and which consists of vertices ( points in 3D space), edges (connect vertices(), and faces (formed by edges). By adjusting the different parts of a mesh you can create a world of different shapes and getting used these three elements as the basis of any shape will impact all future creative decisions.",
+      "Rigging in Blender is the process of creating a skeleton for a 3D model so it can be animated. This involves setting up a series of bones, or armature, that act as a framework for the model. Each bone is linked to specific parts of the mesh, allowing for realistic movements when the bones are manipulated. Rigging also includes defining constraints and controls to simplify animation tasks. It is essential for bringing characters and objects to life, enabling movements like walking, bending, and facial expressions.",
     modalContent2:
-      "TIP: Learning the basic keyboard shortcuts is the key to fast workdlow.",
+      "TIP: Clean Topology.Ensure your model has a clean, evenly distributed mesh topology for smoother deformations.",
     modalPrimaryButton: "Blender Documentation >>",
     modalPrimaryButtonLink:
-      "https://www.blender.org/features/modeling/https://www.youtube.com/watch?v=tBpnKTAc5Eo&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=2",
-    modalSecondaryButton: "Doughnut Tutorial >>",
-    modalSecondaryButtonLink:
-      "https://www.youtube.com/watch?v=B0J27sf9N1Y&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z",
+      "https://www.blender.org/features/animation/#rigging",
+    modalSecondaryButton: "Recommended Tutorial >>",
+    modalSecondaryButtonLink: "https://www.youtube.com/watch?v=srpOeu9UUBU",
   },
   {
-    buttonLabel: "Step 3",
-    buttonImageSrc: sculpting,
-    buttonHeading: "Sculpting",
+    buttonLabel: "Topic 3",
+    buttonImageSrc: retopologising,
+    buttonHeading: "Retopologising",
     modalHeading: "3",
-    modalSubHeading: "Sculpting",
+    modalSubHeading: "Retopologising",
     modalContent1:
-      "Digital sculpting tools provide essential power and flexibility for various stages in the digital production pipeline, including character and environment design. Blender enhances this process by seamlessly integrating sculpting and polygonal modeling toolsets, allowing artists to transition smoothly from initial concept exploration to final model production. This way you can create detailed, organic shapes and precise structural modifications. Additionally, Blender's dynamic topology and powerful modifiers support non-destructive workflows.",
+      "Retopologizing in Blender is the process of recreating the mesh of a 3D model to improve its topology, making it cleaner and more efficient for animation and rendering. This involves manually or semi-automatically drawing new geometry over the original high-poly model to create a low-poly version with optimized edge flow and fewer polygons. Retopologizing ensures that the model deforms correctly during animation, reduces computational load, and enhances texturing and shading. It's essential for transforming sculpted models or scanned data into usable assets in animation and game design.",
     modalContent2:
-      "TIP: Create an 'Archive' collection and move a duplicate of your model before you begin sculpting.",
-    modalPrimaryButton: "Blender Documentation >>",
-    modalPrimaryButtonLink: "https://www.blender.org/features/sculpting/",
-    modalSecondaryButton: "Doughnut Tutorial >>",
-    modalSecondaryButtonLink:
-      "https://www.youtube.com/watch?v=--GVNZnSROc&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=4",
-  },
-  {
-    buttonLabel: "Step 4",
-    buttonImageSrc: shading,
-    buttonHeading: "Shading",
-    modalHeading: "4",
-    modalSubHeading: "Shading",
-    modalContent1:
-      "Shading in Blender involves creating materials and textures to define how surfaces interact with light using the node-based Shader Editor. This allows for the creation of complex, realistic, or stylized materials by connecting various shader nodes. Artists can use shaders like diffuse, glossy, and emission to achieve specific effects, while texture maps such as bump, normal, and displacement add surface detail without increasing geometry. Blender’s PBR (Physically Based Rendering) shaders ensure materials behave realistically under different lighting conditions, enhancing the realism and visual appeal of 3D models.",
-    modalContent2:
-      "TIP: Before shading, understand how light interacts with surfaces. This knowledge helps in creating more realistic materials.",
+      "TIP: Use Proper Tools. Utilize Blender's RetopoFlow add-on or tools like the Shrinkwrap modifier and the BSurface add-on to simplify the process.",
     modalPrimaryButton: "Blender Documentation >>",
     modalPrimaryButtonLink:
-      "https://docs.blender.org/manual/en/2.79/editors/3dview/properties/shading.html",
-    modalSecondaryButton: "Doughnut Tutorial >>",
-    modalSecondaryButtonLink:
-      "https://www.youtube.com/watch?v=fsLO1F5x7yM&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=5",
+      "https://docs.blender.org/manual/en/latest/modeling/meshes/retopology.html",
+    modalSecondaryButton: "Recommended Tutorial >>",
+    modalSecondaryButtonLink: "https://www.youtube.com/watch?v=X2GNyEUvpD4",
   },
   {
-    buttonLabel: "Step 5",
-    buttonImageSrc: shading,
-    buttonHeading: "Shading",
+    buttonLabel: "Topic 4",
+    buttonImageSrc: effects,
+    buttonHeading: "Effects",
     modalHeading: "4",
-    modalSubHeading: "Shading",
+    modalSubHeading: "Effects",
     modalContent1:
-      "Shading in Blender involves creating materials and textures to define how surfaces interact with light using the node-based Shader Editor. This allows for the creation of complex, realistic, or stylized materials by connecting various shader nodes. Artists can use shaders like diffuse, glossy, and emission to achieve specific effects, while texture maps such as bump, normal, and displacement add surface detail without increasing geometry. Blender’s PBR (Physically Based Rendering) shaders ensure materials behave realistically under different lighting conditions, enhancing the realism and visual appeal of 3D models.",
+      "Simulation and effects in Blender refer to the creation of realistic physical phenomena and dynamic interactions within a 3D scene. This includes fluid dynamics, smoke, fire, cloth, hair, soft bodies, and rigid body dynamics. By configuring various physics properties and using Blender's built-in simulation engines, artists can mimic real-world behaviors, such as water flowing, cloth draping, or hair moving with the wind. These simulations enhance the realism of scenes and are crucial for visual effects in animations and films. Additionally, Blender's particle system allows for creating complex effects like explosions, rain, or swarms.",
     modalContent2:
-      "TIP: Before shading, understand how light interacts with surfaces. This knowledge helps in creating more realistic materials.",
+      "TIP: Start Simple. Begin with basic setups and gradually increase complexity to understand how each parameter affects the simulation.",
     modalPrimaryButton: "Blender Documentation >>",
     modalPrimaryButtonLink:
-      "https://docs.blender.org/manual/en/2.79/editors/3dview/properties/shading.html",
-    modalSecondaryButton: "Doughnut Tutorial >>",
-    modalSecondaryButtonLink:
-      "https://www.youtube.com/watch?v=fsLO1F5x7yM&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z&index=5",
+      "https://docs.blender.org/manual/en/latest/grease_pencil/visual_effects/index.html",
+    modalSecondaryButton: "Recommended Tutorial >>",
+    modalSecondaryButtonLink: "https://www.youtube.com/watch?v=CrOboutVHH8",
+  },
+  {
+    buttonLabel: "Topic 5",
+    buttonImageSrc: cloth,
+    buttonHeading: "Cloth Simulation",
+    modalHeading: "5",
+    modalSubHeading: "Cloth Simulation",
+    modalContent1:
+      "Soft body and cloth simulation in Blender enable the realistic animation of objects that deform and interact with forces like gravity, wind, and collisions. Soft body simulation is used for objects that maintain volume but have flexible surfaces, such as jelly or rubber. Cloth simulation, on the other hand, is tailored for fabrics, allowing them to drape, fold, and react to environmental influences like wind or collisions with other objects. Both simulations involve configuring physics properties like stiffness, damping, and collision settings to achieve natural and believable motions, enhancing the realism of animated scenes.",
+    modalContent2:
+      "TIP: Set Up Collision Objects. Define collision objects to interact with soft bodies or cloth, ensuring realistic behavior when they come into contact.",
+    modalPrimaryButton: "Blender Documentation >>",
+    modalPrimaryButtonLink:
+      "https://docs.blender.org/manual/en/latest/physics/soft_body/introduction.html",
+    modalSecondaryButton: "Recommended Tutorial >>",
+    modalSecondaryButtonLink: "https://www.youtube.com/watch?v=LtgSuRTeh_g",
   },
 ];
 
