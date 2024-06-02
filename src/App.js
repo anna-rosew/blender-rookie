@@ -8,6 +8,7 @@ import LearningJourney from "./LearningJourney";
 import Foundation from "./Foundation.js";
 import Footer from "./Footer";
 import Exploration from "./Exploration";
+import Inspiration from "./Inspiration.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <LearningJourney />
       <Foundation />
       <Exploration />
+      <Inspiration />
       <Footer />
     </div>
   );

@@ -1,0 +1,58 @@
+.inspiration-section h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 3850px;
+  left: 550px;
+}
+
+.inspiration-section h2 {
+  margin-top: 50px;
+}
+
+.communities {
+  background-color: #e39d37;
+  padding: 60px;
+}
+
+.artists {
+  padding: 60px;
+}
+
+li {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+li:hover {
+  color: white;
+  background-color: #265e71;
+}
+
+.inspiration-section a {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.inspiration-section a:hover {
+  color: white;
+}
+
+@media (max-width: 960px) {
+  .inspiration-section h1 {
+    top: 5350px;
+    left: 50px;
+  }
+
+  .communities {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
