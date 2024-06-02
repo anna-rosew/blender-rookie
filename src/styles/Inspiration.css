@@ -1,13 +1,25 @@
+.inspiration-centered-line {
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  height: 50px;
+  width: 2px; /* Line width */
+  border-left: 2px dashed white; /* Dashed line */
+  transform: translateX(-50%);
+}
+
+.inspiration-section {
+  color: white;
+}
+
 .inspiration-section h1 {
   font-size: 48px;
-  margin-bottom: 10px;
-  position: absolute;
-  top: 3850px;
-  left: 550px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .inspiration-section h2 {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .communities {
@@ -43,16 +55,19 @@ li:hover {
 .inspiration-section a:hover {
   color: white;
 }
+.grid-4-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  grid-gap: 10px;
+}
 
 @media (max-width: 960px) {
-  .inspiration-section h1 {
-    top: 5350px;
-    left: 50px;
+  .communities {
+    padding: 15px;
   }
 
-  .communities {
-    padding-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
+  .grid-4-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 }
