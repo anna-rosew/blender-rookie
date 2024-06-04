@@ -10,6 +10,9 @@ import Footer from "./Footer";
 import Exploration from "./Exploration";
 import Inspiration from "./Inspiration.js";
 
+//Change background colours
+//Link anchors to menu
+
 function App() {
   return (
     <div className="App">
