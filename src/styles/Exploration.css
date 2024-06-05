@@ -1,5 +1,5 @@
 .exploration-section {
-  background-color: #265e71;
+  background-color: #f5f3f1;
   text-align: center;
   padding: 50px;
 }
@@ -7,36 +7,36 @@
 .exploration-section h1 {
   font-size: 48px;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
 
 .description {
-  color: white;
+  color: black;
   margin-bottom: 30px;
 }
 
-h4 {
+.exploration-section h4 {
   margin-bottom: 20px;
 }
 
 .explore-centered-line {
   display: block;
   margin: 0 auto;
-  left: 50%;
   height: 50px;
   width: 2px; /* Line width */
-  border-left: 2px dashed white; /* Dashed line */
+  border-left: 2px dashed black; /* Dashed line */
   transform: translateX(-50%);
 }
 
 .grid-5-columns {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
 }
 
 @media (max-width: 960px) {
   .grid-5-columns {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
 

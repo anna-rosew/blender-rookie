@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/App.css";
 import "./styles/LearningJourney.css";
+import { Link } from "react-scroll";
 import booksImage from "./imgs/books.png";
 import plantImage from "./imgs/plant.png";
 import mugImage from "./imgs/mug.png";
@@ -18,9 +19,14 @@ export default function LearningJourney() {
           {" "}
           This is a simple breakdown of how to go about learning Blender. If
           you’re experienced, it’s recommended you skip to{" "}
-          <a href="/" alt="Skip to exploration">
-            Exploration.
-          </a>
+          <Link
+            to="foundation"
+            smooth={true}
+            duration={500}
+            alt="Skip to exploration"
+          >
+            Exploration
+          </Link>
         </h4>
       </div>
       <section className="grid grid-3-columns">

@@ -1,27 +1,31 @@
+/* Learning Journey Section */
 .LearningJourney {
   background-color: white;
   text-align: center;
 }
 
+/* Heading Styles */
 .learning-heading {
   padding: 60px;
 }
 
+/* Subtitle Styles */
 .subtitle {
   font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 300;
   margin-top: 0;
   margin-bottom: 20px;
-  font-weight: 300;
-  font-size: 14px;
   opacity: 70%;
 }
 
+/* Heading Styles */
 .LearningJourney h1 {
   font-size: 48px;
   margin: 10px auto;
 }
 
+/* Link Styles */
 .LearningJourney a {
   color: black;
   text-decoration: none;
@@ -32,21 +36,25 @@
   text-decoration: underline;
 }
 
+/* Responsive Image Styles */
 .img-responsive {
   max-width: 100%;
   border: 1px solid black;
   border-radius: 46px;
 }
 
+/* Grid Layout */
 .grid {
   display: grid;
   grid-gap: 64px;
 }
 
+/* 3 Column Grid Layout */
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* Learn Button Styles */
 .learn {
   display: inline-block;
   padding: 10px 20px;
@@ -66,31 +74,40 @@
   text-decoration: none;
 }
 
+/* Inspired Section */
 .inspired {
   margin-top: 75px;
 }
 
+/* Media Queries */
 @media (max-width: 960px) {
+  /* Single Column Grid */
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
+  /* Reduce Padding of Sections */
   section {
     padding: 10px;
   }
 
+  /* Adjust Subtitle Margin */
   .subtitle {
     margin-bottom: 0;
   }
 
+  /* Reduce Heading Padding */
   .learning-heading {
     padding: 30px;
   }
 
+  /* Center Heading */
   .LearningJourney h1 {
     margin: 10px auto;
   }
 
+  /* Reduce Margin of Inspired Section */
   .inspired {
     margin: 30px;
   }

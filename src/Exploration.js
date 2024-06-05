@@ -100,7 +100,7 @@ const buttonsData = [
 
 export default function Exploration() {
   return (
-    <div className="exploration-section">
+    <div className="exploration-section" id="exploration">
       <div className="explore-centered-line"></div>
       <h1>Exploration</h1>
       <p className="description">

@@ -5,11 +5,12 @@ import "./styles/App.css";
 
 export default function ComputerHero() {
   return (
-    <div className="ThreedContainer">
+    <div className="ThreedContainer" id="computerHero">
       <Wrapper>
         <Spline
           scene="https://prod.spline.design/A8GqjKLBpzrMR-JR/scene.splinecode
     "
+          loading="lazy"
         />
       </Wrapper>
     </div>

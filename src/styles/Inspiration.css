@@ -1,22 +1,16 @@
-.inspiration-centered-line {
-  display: block;
-  margin: 0 auto;
-  left: 50%;
-  height: 50px;
-  width: 2px; /* Line width */
-  border-left: 2px dashed white; /* Dashed line */
-  transform: translateX(-50%);
+/* Inspiration Section */
+.inspiration-section {
+  color: white;
+  text-align: center;
 }
 
-.inspiration-section {
-  color: black;
+.inspiration-section p {
+  color: white;
 }
 
 .inspiration-section h1 {
   font-size: 48px;
   margin-bottom: 10px;
-
-  text-align: center;
 }
 
 .inspiration-section h2 {
@@ -24,32 +18,10 @@
   margin-bottom: 20px;
 }
 
-.communities {
-  background-color: #e39d37;
-  padding: 60px;
-}
-
-.artists {
-  padding: 60px;
-  background-color: #bf6b27;
-}
-
-li {
-  border-bottom: 1px solid black;
-  padding: 5px;
-}
-
-li:hover {
-  color: white;
-  background-color: #265e71;
-}
-
 .inspiration-section a {
-  color: black;
+  color: white;
   font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
   font-size: 15px;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -58,11 +30,48 @@ li:hover {
 .inspiration-section a:hover {
   color: white;
 }
+
+/* Centered Line */
+.inspiration-centered-line {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 2px; /* Line width */
+  border-left: 2px dashed white; /* Dashed line */
+  transform: translateX(-50%);
+}
+
+/* Communities Section */
+.communities {
+  background-color: #409295;
+  padding: 60px;
+}
+
+/* Artists Section */
+.artists {
+  padding: 60px;
+  background-color: #265e71;
+}
+
+/* List Items */
+li {
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+
+li:hover {
+  color: black;
+  background-color: #265e71;
+}
+
+/* Grid Layout */
 .grid-4-columns {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
 
+/* Media Queries */
 @media (max-width: 960px) {
   .communities {
     padding: 15px;
@@ -77,3 +86,4 @@ li:hover {
     grid-gap: 10px;
   }
 }
+

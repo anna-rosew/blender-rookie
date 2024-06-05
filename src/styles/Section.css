@@ -1,8 +1,10 @@
+/* Section Heading */
 .section-heading {
   padding: 10px;
   text-align: center;
 }
 
+/* Section H1 */
 .section h1 {
   font-size: 48px;
   margin: 10px auto;

@@ -7,7 +7,6 @@ export default function LearningButton({
   buttonLabel,
   buttonImageSrc,
   buttonHeading,
-
   modalHeading,
   modalSubHeading,
   modalContent1,

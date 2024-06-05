@@ -5,7 +5,7 @@ import "./styles/Inspiration.css";
 
 export default function Inpiration() {
   return (
-    <div className="inspiration-section">
+    <div className="inspiration-section" id="inspiration">
       <div className="communities">
         <div className="inspiration-centered-line"></div>
         <h1>Inspiration</h1>

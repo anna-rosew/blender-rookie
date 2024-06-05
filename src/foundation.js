@@ -188,7 +188,7 @@ const buttonsData = [
 
 export default function Foundation() {
   return (
-    <div className="foundation-section">
+    <div className="foundation-section" id="foundation">
       <h1>Foundation</h1>
       <div className="centered-line"></div>
       <a
