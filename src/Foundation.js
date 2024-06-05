@@ -3,7 +3,7 @@ import LearningButton from "./LearningButton";
 import "./styles/Foundation.css";
 import "./styles/Section.css";
 import "./styles/App.css";
-import ui from "./imgs/Ui.png";
+import ui from "./imgs/UI.png";
 import modelling from "./imgs/modelling.png";
 import sculpting from "./imgs/sculpting.png";
 import shading from "./imgs/shading.png";
