@@ -98,9 +98,9 @@ const buttonsData = [
   },
 ];
 
-export default function Exploration() {
+export default function Exploration({ id }) {
   return (
-    <div className="exploration-section" id="exploration">
+    <div className="exploration-section" id={id}>
       <div className="explore-centered-line"></div>
       <h1>Exploration</h1>
       <p className="description">

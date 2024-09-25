@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./styles/App.css";
 import "./styles/Intro.css";
 
-export default function IntroSection() {
+export default function IntroSection({ id }) {
   return (
-    <div className="Intro">
+    <div className="Intro" id={id}>
       <h1 className="intro-header">Introduction</h1>
       <div className="intro-para">
         <p className="intro-summary">
@@ -48,9 +49,9 @@ export default function IntroSection() {
           </div>
         </section>
       </div>
-      <a href="/">
-        <div id="dialog2" className="triangle_down1"></div>
-      </a>
+      <Link to="journey" spy={true} smooth={true} duration={500} offset={-50}>
+        <div className="triangle_down1"></div>
+      </Link>
     </div>
   );
 }

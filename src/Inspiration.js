@@ -3,9 +3,9 @@ import { InstagramEmbed } from "react-social-media-embed";
 import "./styles/App.css";
 import "./styles/Inspiration.css";
 
-export default function Inpiration() {
+export default function Inpiration({ id }) {
   return (
-    <div className="inspiration-section" id="inspiration">
+    <div className="inspiration-section" id={id}>
       <div className="communities">
         <div className="inspiration-centered-line"></div>
         <h1>Inspiration</h1>
@@ -146,6 +146,7 @@ export default function Inpiration() {
             />
           </div>
         </div>
+        <div className="centered-line-bottom"></div>
       </div>
     </div>
   );

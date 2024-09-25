@@ -10,9 +10,9 @@ import mugImage from "./imgs/mug.png";
 //Link buttons to pages
 //Footer with smiley
 
-export default function LearningJourney() {
+export default function LearningJourney({ id }) {
   return (
-    <div className="LearningJourney">
+    <div className="LearningJourney" id={id}>
       <div className="learning-heading">
         <h2>A Short Guide</h2>
         <h4>
@@ -44,9 +44,16 @@ export default function LearningJourney() {
             the software interface to creating your first animation, these steps
             will help you build a foundation of skills.
           </p>
-          <a href="https://www.example.com" className="learn">
+          <Link
+            to="foundation"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="learn"
+          >
             Start Learning
-          </a>
+          </Link>
         </div>
 
         <div className="Exploration">
@@ -63,9 +70,16 @@ export default function LearningJourney() {
             completed the <a href="/">Foundation Roadmap</a> or are already
             familiar with Blender, we recommend you jump here.
           </p>
-          <a href="https://www.example.com" className="learn">
+          <Link
+            to="exploration"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="learn"
+          >
             Explore More
-          </a>
+          </Link>
         </div>
 
         <div className="Inspiration">
@@ -81,9 +95,16 @@ export default function LearningJourney() {
             we've linked some communities and artists we recommend getting
             plugged into.{" "}
           </p>
-          <a href="https://www.example.com" className="learn inspired">
+          <Link
+            to="inspiration"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className="learn"
+          >
             Get Inspired
-          </a>
+          </Link>
         </div>
       </section>
     </div>

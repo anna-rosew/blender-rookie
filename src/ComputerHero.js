@@ -3,9 +3,9 @@ import React from "react";
 import styled from "styled-components";
 import "./styles/App.css";
 
-export default function ComputerHero() {
+export default function ComputerHero({ id }) {
   return (
-    <div className="ThreedContainer" id="computerHero">
+    <div className="ThreedContainer" id={id}>
       <Wrapper>
         <Spline
           scene="https://prod.spline.design/A8GqjKLBpzrMR-JR/scene.splinecode

@@ -186,9 +186,9 @@ const buttonsData = [
   // Add more buttons as needed
 ];
 
-export default function Foundation() {
+export default function Foundation({ id }) {
   return (
-    <div className="foundation-section" id="foundation">
+    <div className="foundation-section" id={id}>
       <h1>Foundation</h1>
       <div className="centered-line"></div>
       <a
