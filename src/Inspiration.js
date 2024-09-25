@@ -1,5 +1,6 @@
 import React from "react";
 import { InstagramEmbed } from "react-social-media-embed";
+import { Link } from "react-scroll";
 import "./styles/App.css";
 import "./styles/Inspiration.css";
 
@@ -147,6 +148,8 @@ export default function Inpiration({ id }) {
           </div>
         </div>
         <div className="centered-line-bottom"></div>
+
+        <p>Thank you for reading and happy rendering!</p>
       </div>
     </div>
   );
